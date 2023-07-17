@@ -1,0 +1,7 @@
+body {
+  background-color: var(--color-light-red1);
+}
+
+.padding-2-gap {
+  padding: calc(var(--gap) * 2);
+}

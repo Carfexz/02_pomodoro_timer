@@ -1,0 +1,16 @@
+:root {
+  --color-light-red1: rgba(197, 51, 70, 0.8); /** background */
+
+  --color-light-red2: 2px solid rgba(197, 51, 70, 1); /** border */
+
+  --color-light-gray1: rgba(87, 87, 87, 0.7); /** backdrop */
+
+  --color-white: rgba(255, 255, 255, 1); /** base color */
+  --color-black: rgba(0, 0, 0, 1);
+
+  --font-size-big: 25px; /** font size */
+  --font-size-normal: 14px;
+  --font-size-small: 12px;
+
+  --gap: 5px; /** gap size */
+}
