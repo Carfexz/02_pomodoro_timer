@@ -1,13 +1,12 @@
 import React from "react";
 import './styles/fonts.css'
+import './test.css'
 
-function App() {
+function App({ text = 'FONTSWORK???' }) {
   return (
-    <div>
-      <h1>
-        test
-      </h1>
-    </div>
+    <h1 className='test'>
+      {text}
+    </h1>
   );
 }
 

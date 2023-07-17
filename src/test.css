@@ -1,0 +1,7 @@
+.test {
+  font-family: "Lato";
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 35vh;
+}
