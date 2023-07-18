@@ -1,13 +1,13 @@
 import React from "react";
-import Footer from "./components/widgets/Footer/Footer";
+import Layout from "./components/pages/Layout/Layout";
 import './styles/fonts.css'
 import './test.css'
 
 const App = () => {
   return (
-    <div className='test'>
-      <Footer />
-    </div>
+    <Layout isHeader={true} isFooter={true}>
+      <div className="test-app" />
+    </Layout>
   );
 }
 

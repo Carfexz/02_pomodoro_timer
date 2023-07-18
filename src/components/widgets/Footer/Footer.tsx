@@ -1,8 +1,9 @@
 import React from "react";
+import './Footer.css'
 
-const Footer = ({ text = 'work' }) => {
+const Footer = ({ text = 'Footer' }) => {
     return (
-        <div>
+        <div className="main-footer">
             {text}
         </div>
     )
