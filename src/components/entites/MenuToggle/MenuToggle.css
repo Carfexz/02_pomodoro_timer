@@ -1,0 +1,6 @@
+.path {
+  fill: transparent;
+  stroke-width: calc(var(--gap) * 1);
+  stroke: var(--color-black);
+  stroke-linecap: round;
+}
