@@ -1,6 +1,6 @@
 .main-header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 4vh 4vh 1vh 4vh;
   height: calc(var(--gap) * 10);
   width: 100%;

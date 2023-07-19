@@ -3,7 +3,7 @@ import Header from "../../widgets/Header/Header"
 import { FC, HTMLAttributes } from "react"
 import { ReactNode } from "react";
 
-export interface ComponentProps extends HTMLAttributes<HTMLDivElement> {
+interface ComponentProps extends HTMLAttributes<HTMLDivElement> {
     children: ReactNode;
     isHeader: true | false;
     isFooter: true | false;

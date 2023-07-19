@@ -1,10 +1,13 @@
 import React from "react";
+import Button from "../../ui/Button/Button";
 import './Header.css'
 
-const Header = ({ text = 'Header' }) => {
+const Header = () => {
     return (
         <div className="main-header">
-            {text}
+            <Button>
+
+            </Button>
         </div>
     )
 }

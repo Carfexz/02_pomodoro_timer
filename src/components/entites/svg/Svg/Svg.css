@@ -1,0 +1,4 @@
+.svg {
+  width: calc(var(--gap) * 5);
+  height: calc(var(--gap) * 5);
+}
