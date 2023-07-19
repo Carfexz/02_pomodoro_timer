@@ -1,7 +1,15 @@
 import Footer from "../../widgets/Footer/Footer"
 import Header from "../../widgets/Header/Header"
+import { FC, HTMLAttributes } from "react"
+import { ReactNode } from "react";
 
-const Layout = ({ isHeader = true, isFooter = true, children }) => {
+export interface ComponentProps extends HTMLAttributes<HTMLDivElement> {
+    children: ReactNode;
+    isHeader: true | false;
+    isFooter: true | false;
+}
+
+const Layout: FC<ComponentProps> = ({ isHeader = true, isFooter = true, children }) => {
     return (
         <div>
             {isHeader && <Header />}

@@ -4,7 +4,7 @@ import Stats from "./components/pages/Stats";
 import About from "./components/pages/About";
 import Error from "./components/pages/Error";
 import { pathRoutes } from "./const/routes/routes";
-import LayoutHelper from "./helpers/Layout";
+import LayoutHelper from "./helpers/LayoutHelper";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './styles/fonts.css'
 
