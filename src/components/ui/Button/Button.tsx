@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { buttonAnimations } from '../../../const/animations/animations';
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-    children: ReactNode;
+    children?: ReactNode;
     text?: string,
     // onClick?: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>, // ! Не надо дублировать базовые слушатели событий в интерфейсы 
     isMenu?: string,
@@ -13,7 +13,7 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
     menuIcon?: true | false,
 }
 
-const Button: FC<ButtonProps> = ({ text, onClick, isMenu, isCross, crossIcon = false, menuIcon = false }) => {
+const Button: FC<ButtonProps> = ({ children, text, onClick, isMenu, isCross, crossIcon = false, menuIcon = false }) => {
     return (
         <motion.div
             {...buttonAnimations}

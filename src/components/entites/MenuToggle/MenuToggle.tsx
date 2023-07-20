@@ -7,9 +7,9 @@ import './MenuToggle.css'
 
 interface MenuToggleComponentProps {
     toggle?: (a: React.MouseEvent<HTMLButtonElement>) => void; // ! Типизация функций
-    variants: object;
-    transition: object;
-    d: string;
+    variants?: object;
+    transition?: object;
+    d?: string;
 }
 
 export const MenuToggle: FC<MenuToggleComponentProps> = ({ toggle }) => (
