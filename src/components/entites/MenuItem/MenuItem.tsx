@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
+import { FC, HTMLAttributes } from "react";
+import { ReactNode } from "react";
 import './MenuItem.css'
+
+interface MenuItemProps extends HTMLAttributes<HTMLDivElement> {
+    children?: ReactNode;
+    i: number;
+}
 
 const variants = {
     open: {
@@ -20,7 +27,7 @@ const variants = {
 
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
-const MenuItem = ({ i }) => {
+const MenuItem: FC<MenuItemProps> = ({ i }) => {
     const style = { border: `2px solid ${colors[i]}` }
     return (
         <motion.li

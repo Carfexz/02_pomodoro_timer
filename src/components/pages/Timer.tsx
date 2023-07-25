@@ -6,8 +6,8 @@ const Timer = () => {
 
     return (
         <Layout isHeader={true} isFooter={true}>
-            <MenuItem>
-                123
+            <MenuItem i={2}>
+
             </MenuItem>
         </Layout>
     );
