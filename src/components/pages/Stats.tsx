@@ -13,7 +13,7 @@ const Stats = () => {
                 <h1>
                     {count}
                 </h1>
-                <Button onClick={() => dispatch(increment(1))} text={'increment'} />
+                <Button onClick={() => dispatch(increment(2))} text={'increment'} />
                 <Button onClick={() => dispatch(decrement(2))} text={'decrement'} />
             </div>
         </Layout>
