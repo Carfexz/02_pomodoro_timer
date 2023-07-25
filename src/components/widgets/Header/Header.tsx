@@ -1,13 +1,11 @@
 import React from "react";
-import MenuItem from "../../entites/MenuItem/MenuItem";
-import { MenuToggle } from "../../entites/MenuToggle/MenuToggle";
-import Button from "../../ui/Button/Button";
+import Sidebar from "../../features/Sidebar/Sidebar";
 import './Header.css'
 
 const Header = () => {
     return (
         <div className="main-header">
-
+            <Sidebar />
         </div>
     )
 }

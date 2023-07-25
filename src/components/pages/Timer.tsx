@@ -1,14 +1,11 @@
-import React from "react";
-import MenuItem from "../entites/MenuItem/MenuItem";
 import Layout from "../pages/Layout/Layout";
+import Button from "../ui/Button/Button";
 
 const Timer = () => {
 
     return (
         <Layout isHeader={true} isFooter={true}>
-            <MenuItem i={2}>
 
-            </MenuItem>
         </Layout>
     );
 }

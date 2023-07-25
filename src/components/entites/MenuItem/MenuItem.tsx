@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FC, HTMLAttributes } from "react";
 import { ReactNode } from "react";
+import Button from "../../ui/Button/Button";
 import './MenuItem.css'
 
 interface MenuItemProps extends HTMLAttributes<HTMLDivElement> {
@@ -25,19 +26,18 @@ const variants = {
     }
 };
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
+const colors = ['#ff2b2b', '#ff2b2b', '#ff2b2b'];
 
 const MenuItem: FC<MenuItemProps> = ({ i }) => {
     const style = { border: `2px solid ${colors[i]}` }
     return (
-        <motion.li
+        <motion.div
             variants={variants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
         >
-            <div className="icon-placeholder" style={style} />
             <div className="text-placeholder" style={style} />
-        </motion.li>
+        </motion.div>
     )
 }
 

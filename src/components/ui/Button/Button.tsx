@@ -13,14 +13,13 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
     menuIcon?: true | false,
 }
 
-const Button: FC<ButtonProps> = ({ children, text, onClick, isMenu, isCross, crossIcon = false, menuIcon = false }) => {
+const Button: FC<ButtonProps> = ({ children, text, onClick }) => {
     return (
         <motion.div
-            {...buttonAnimations}
+        // {...buttonAnimations}
         >
-            <button onClick={onClick} >
+            <button className='button' onClick={onClick} >
                 {text}
-                {menuIcon && <AiOutlineMenuUnfold className='icon' />}
             </button>
         </motion.div>
     )

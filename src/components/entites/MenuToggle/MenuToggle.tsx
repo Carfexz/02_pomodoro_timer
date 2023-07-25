@@ -3,22 +3,26 @@ import { FC } from 'react'
 import Path from "../svg/Path/Path";
 import Svg from "../svg/Svg/Svg";
 import Button from "../../ui/Button/Button";
+import { ReactNode } from 'react';
 import './MenuToggle.css'
 
 interface MenuToggleComponentProps {
+    children: ReactNode;
     toggle?: (a: React.MouseEvent<HTMLButtonElement>) => void; // ! Типизация функций
     variants?: object;
     transition?: object;
     d?: string;
 }
 
+// ! Доделать условный рендеринг классов для кнопки открывающей меню
+
 export const MenuToggle: FC<MenuToggleComponentProps> = ({ toggle }) => (
-    <Button onClick={toggle}>
+    <Button onClick={toggle} className='test-btn'>
         <Svg viewBox='0 0 25 25'>
             <Path
                 variants={{
                     closed: { d: "M 2 2.5 L 20 2.5" },
-                    open: { d: "M 3 16.5 L 17 2.5" }
+                    open: { d: "M 3 16.5 L 17 2.5" },
                 }}
             />
             <Path

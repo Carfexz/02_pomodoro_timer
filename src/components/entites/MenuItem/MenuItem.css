@@ -1,14 +1,5 @@
-.icon-placeholder {
-  width: calc(var(--gap) * 8);
-  height: calc(var(--gap) * 8);
-  border-radius: 50%;
-  flex: calc(var(--gap) * 8);
-  margin-right: calc(var(--gap) * 4);
-}
-
 .text-placeholder {
   border-radius: calc(var(--gap) * 1);
   width: calc(var(--gap) * 40);
-  height: calc(var(--gap) * 4);
-  flex: 1;
+  height: calc(var(--gap) * 8);
 }
